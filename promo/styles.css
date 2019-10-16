@@ -104,7 +104,7 @@ header {
   width: 100%;
   min-height: 90vh;
   height: 100%;
-  background-image: url(./img/fon5.png);
+  background-image: url(./img/fon6.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -114,13 +114,13 @@ header {
 .hero__head {
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
-  color: #31b693; }
+  color: #b10820; }
 
 .hero__utp {
   font-family: "Roboto";
   font-size: 1.3rem;
   font-weight: 300;
-  color: #555; }
+  color: #000; }
   .hero__utp img {
     height: 25px; }
 
@@ -128,17 +128,17 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-family: "Roboto";
   font-size: 1.4rem;
   font-weight: 300;
-  color: #555; }
-  .hero__location p {
-    width: 50%; }
-  .hero__location img {
-    width: 50%; }
+  color: #000; }
 
 .hero__btn {
   display: inline-block;
@@ -505,4 +505,7 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 2.6rem;
   font-weight: 900;
+  color: #fff; }
+
+.footer__support {
   color: #fff; }
