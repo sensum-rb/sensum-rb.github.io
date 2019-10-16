@@ -426,7 +426,9 @@ header {
 .holiday__head {
   background-color: rgba(49, 182, 147, 0.5);
   font-size: 3rem;
+  font-weight: 300;
   text-align: center;
+  text-shadow: 1px 1px 1px #000;
   color: #fff; }
 
 @media screen and (max-width: 599px) {
