@@ -8,5 +8,8 @@ $(".bst").click(() => {
   $(".modal3").css("display", "block");
 });
 $(".modal__exit").click(() => {
+  $("video")[0].pause();
+  $("video")[1].pause();
+  $("video")[2].pause();
   $(".modal").hide();
 });
