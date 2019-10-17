@@ -34,6 +34,17 @@
 }
 
 @media screen and (max-width: 599px) {
+  .media__wrapper {
+    flex-direction: column;
+  }
+  .media__main {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+  .media__main__img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 600px) {

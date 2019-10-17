@@ -28,12 +28,16 @@ header {
 }
 
 @media screen and (max-width: 599px) {
+  .header__logo {
+    height: 30px;
+  }
   .header__partner,
   .header__cta {
     display: none;
   }
   .header__phone {
     margin-left: auto;
+    margin-right: 0;
     font-size: 1.2rem;
   }
 }

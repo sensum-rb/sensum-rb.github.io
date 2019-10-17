@@ -1,5 +1,6 @@
 .gallery {
   @include flex-box-col-center();
+  width: 100%;
   padding-top: 6em;
   padding-bottom: 6em;
 }
@@ -22,8 +23,10 @@
 .gallery__arrow:last-child {
   padding-left: 0.5em;
 }
-.gallery__img {
-  width: auto !important;
-  height: 250px !important;
+.slider__item__wrapper {
   margin-left: 1em;
+}
+.gallery__img {
+  width: 100%;
+  height: auto;
 }

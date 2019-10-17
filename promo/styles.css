@@ -77,11 +77,14 @@ header {
   color: #31b693; }
 
 @media screen and (max-width: 599px) {
+  .header__logo {
+    height: 30px; }
   .header__partner,
   .header__cta {
     display: none; }
   .header__phone {
     margin-left: auto;
+    margin-right: 0;
     font-size: 1.2rem; } }
 
 /* =================
@@ -151,10 +154,28 @@ header {
   border-radius: 100px; }
 
 @media screen and (max-width: 599px) {
+  .hero {
+    background-position: left; }
+  .hero__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .hero__head {
-    font-size: 1.5rem; }
+    text-align: center;
+    font-size: 3rem; }
+  .hero__btn {
+    font-size: 1.2rem; }
   .hero__utp {
-    font-size: 1rem; } }
+    display: none; }
+  .hero__location {
+    display: none; } }
 
 /* =================
     GALLERY
@@ -170,6 +191,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   padding-top: 6em;
   padding-bottom: 6em; }
 
@@ -201,10 +223,12 @@ header {
 .gallery__arrow:last-child {
   padding-left: 0.5em; }
 
-.gallery__img {
-  width: auto !important;
-  height: 250px !important;
+.slider__item__wrapper {
   margin-left: 1em; }
+
+.gallery__img {
+  width: 100%;
+  height: auto; }
 
 /* =================
     MODAL
@@ -307,6 +331,19 @@ header {
 .media__sidebar__img:first-child {
   margin-bottom: 1em; }
 
+@media screen and (max-width: 599px) {
+  .media__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .media__main {
+    margin-right: 0;
+    margin-bottom: 1em; }
+  .media__main__img {
+    width: 100%;
+    height: 100%; } }
+
 /* =================
     LECTORS
  ================= */
@@ -381,8 +418,14 @@ header {
     -ms-flex-wrap: none;
         flex-wrap: none; }
   .lectors__lector {
-    width: 100%;
-    margin-bottom: 2em; } }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .lector__img {
+    width: 100%; }
+  .lector__caption {
+    margin-left: 0; } }
 
 /* =================
     HOLIDAY
@@ -431,9 +474,9 @@ header {
   text-shadow: 1px 1px 1px #000;
   color: #fff; }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 700px) {
   .holiday__head {
-    font-size: 1.3rem; } }
+    font-size: 2rem; } }
 
 /* =================
     CLIENTS
@@ -511,3 +554,15 @@ footer {
 
 .footer__support {
   color: #fff; }
+
+@media screen and (max-width: 599px) {
+  .footer__logo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em; }
+  .footer__cta {
+    font-size: 1.3rem; }
+  .footer__phone {
+    font-size: 2.4rem; }
+  .footer__support {
+    font-size: 0.9rem; } }

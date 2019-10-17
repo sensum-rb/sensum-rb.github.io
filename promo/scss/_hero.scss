@@ -46,13 +46,24 @@
 }
 
 @media screen and (max-width: 599px) {
-  .hero__head {
-    font-size: 1.5rem;
+  .hero {
+    background-position: left;
   }
-  .hero__utp {
-    font-size: 1rem;
+  .hero__wrapper {
+    @include flex-box-col-center();
+  }
+  .hero__head {
+    text-align: center;
+    font-size: 3rem;
   }
   .hero__btn {
+    font-size: 1.2rem;
+  }
+  .hero__utp {
+    display: none;
+  }
+  .hero__location {
+    display: none;
   }
 }
 
