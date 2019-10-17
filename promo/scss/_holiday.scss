@@ -2,9 +2,10 @@
   @include flex-box-col-center();
   padding-top: 6em;
   padding-bottom: 6em;
-  background-image: url(./img/celebrationBlur.png);
+  // background-image: url(./img/celebrationBlur.png);
+  background-image: url(./img/holiday.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-attachment: fixed;
   background-size: cover;
   .hero__btn {
@@ -17,9 +18,9 @@
 .holiday__head {
   // background-color: rgba(0, 0, 0, 0.5);
   // background-color: rgba(177, 7, 32, 0.5);
-  background-color: rgba(49, 182, 147, 0.5);
+  // background-color: rgba(49, 182, 147, 0.5);
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
   text-shadow: 1px 1px 1px #000;
   color: #fff;
