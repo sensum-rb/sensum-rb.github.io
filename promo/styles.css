@@ -135,13 +135,12 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-family: "Roboto";
   font-size: 1.4rem;
   font-weight: 300;
   color: #000; }
+  .hero__location a {
+    color: #b10820; }
 
 .hero__btn {
   display: inline-block;
@@ -493,6 +492,18 @@ header {
           align-items: center;
   padding-top: 6em;
   padding-bottom: 6em; }
+
+.clients__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .clients__head {
   margin-bottom: 2em;

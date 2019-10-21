@@ -3,6 +3,9 @@
   padding-top: 6em;
   padding-bottom: 6em;
 }
+.clients__slider {
+  @include flex-box-row-center();
+}
 .clients__head {
   margin-bottom: 2em;
   color: $sensum-color;
