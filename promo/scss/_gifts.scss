@@ -1,0 +1,104 @@
+.gifts {
+  @include flex-box-col-center();
+  padding-top: 4em;
+  padding-bottom: 6em;
+  // background: linear-gradient(to right top, #ffedca, #ffdbd8);
+}
+.gifts__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.gifts__head {
+}
+.gifts__crossword,
+.gifts__sweety {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 45%;
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #555;
+  }
+  a {
+    flex: 0 0 auto;
+    margin-top: auto;
+    padding: 1em;
+    width: 250px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 100px;
+  }
+}
+.gifts__crossword {
+  .gifts__head {
+    color: #f9a602;
+  }
+  a {
+    background-color: #f9a602;
+    color: #fff;
+    animation: btn__color__crossword 5s infinite ease-in-out;
+  }
+}
+
+@keyframes btn__color__crossword {
+  0% {
+    background-color: #f9a602;
+  }
+  25% {
+    background-color: #ff6152;
+  }
+  50% {
+    background-color: #3d81ff;
+  }
+  75% {
+    background-color: #d12ed1;
+  }
+  100% {
+    background-color: #f9a602;
+  }
+}
+
+.gifts__sweety {
+  .gifts__head {
+    color: #ff6152;
+  }
+  a {
+    background-color: #ff6152;
+    color: #fff;
+    animation: btn__color__sweety 5s infinite ease-in-out;
+  }
+}
+
+@keyframes btn__color__sweety {
+  0% {
+    background-color: #ff6152;
+  }
+  25% {
+    background-color: #f9a602;
+  }
+  50% {
+    background-color: #d12ed1;
+  }
+  75% {
+    background-color: #3d81ff;
+  }
+  100% {
+    background-color: #ff6152;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .gifts__wrapper {
+    flex-direction: column;
+  }
+  .gifts__crossword,
+  .gifts__sweety {
+    width: 100%;
+  }
+  .gifts__crossword {
+    margin-bottom: 4em;
+  }
+}

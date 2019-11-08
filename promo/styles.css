@@ -230,6 +230,140 @@ header {
   height: auto; }
 
 /* =================
+    CROSSWORD
+ ================= */
+.gifts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 4em;
+  padding-bottom: 6em; }
+
+.gifts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.gifts__crossword,
+.gifts__sweety {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 45%; }
+  .gifts__crossword p,
+  .gifts__sweety p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #555; }
+  .gifts__crossword a,
+  .gifts__sweety a {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin-top: auto;
+    padding: 1em;
+    width: 250px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 100px; }
+
+.gifts__crossword .gifts__head {
+  color: #f9a602; }
+
+.gifts__crossword a {
+  background-color: #f9a602;
+  color: #fff;
+  -webkit-animation: btn__color__crossword 5s infinite ease-in-out;
+          animation: btn__color__crossword 5s infinite ease-in-out; }
+
+@-webkit-keyframes btn__color__crossword {
+  0% {
+    background-color: #f9a602; }
+  25% {
+    background-color: #ff6152; }
+  50% {
+    background-color: #3d81ff; }
+  75% {
+    background-color: #d12ed1; }
+  100% {
+    background-color: #f9a602; } }
+
+@keyframes btn__color__crossword {
+  0% {
+    background-color: #f9a602; }
+  25% {
+    background-color: #ff6152; }
+  50% {
+    background-color: #3d81ff; }
+  75% {
+    background-color: #d12ed1; }
+  100% {
+    background-color: #f9a602; } }
+
+.gifts__sweety .gifts__head {
+  color: #ff6152; }
+
+.gifts__sweety a {
+  background-color: #ff6152;
+  color: #fff;
+  -webkit-animation: btn__color__sweety 5s infinite ease-in-out;
+          animation: btn__color__sweety 5s infinite ease-in-out; }
+
+@-webkit-keyframes btn__color__sweety {
+  0% {
+    background-color: #ff6152; }
+  25% {
+    background-color: #f9a602; }
+  50% {
+    background-color: #d12ed1; }
+  75% {
+    background-color: #3d81ff; }
+  100% {
+    background-color: #ff6152; } }
+
+@keyframes btn__color__sweety {
+  0% {
+    background-color: #ff6152; }
+  25% {
+    background-color: #f9a602; }
+  50% {
+    background-color: #d12ed1; }
+  75% {
+    background-color: #3d81ff; }
+  100% {
+    background-color: #ff6152; } }
+
+@media screen and (max-width: 599px) {
+  .gifts__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .gifts__crossword,
+  .gifts__sweety {
+    width: 100%; }
+  .gifts__crossword {
+    margin-bottom: 4em; } }
+
+/* =================
     MODAL
  ================= */
 .modal {
